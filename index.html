@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id='container'>
+        <div class="card">
+            <span id="title">Title</span>
+            <span id="author">Author</span>
+            <span id="pages">0 Pages</span>
+            <span id="status">Read</span>
+        </div>
+    </div>
+    <button id="addCard">Add Book</button>
+
+    <section id="add-book-form">
+        <form id="form" action="/script.js">
+            <h1 class="form-title">Add new book</h1>
+            <input type="text" placeholder="Title" class="input-form" name="title">
+            <input type="text" placeholder="Author" class="input-form" name="author">
+            <input type="number" placeholder="Pages" class="input-form" name="pages">
+            <div class="status-div">
+                <input type="checkbox" id="checkbox" name="status"><span>Have you read it yet?</span>
+            </div>
+            <button form="form" type="submit" id="input-submit">Submit</button>
+        </form>
+    </section>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
