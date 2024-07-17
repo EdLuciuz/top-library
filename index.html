@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/331a42d0f2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Library</h1>
+        <button id="addBook"><i class="fa-solid fa-plus"></i> Add Book</button>
+        <div class="book-container">
+            <div class="bookCard">
+                <i class="fa-solid fa-circle-xmark close-btn" id="closeCard"></i>
+                <p class="cardTitle">One Piece Vol. 1</p>
+                <p class="cardAuthor"><span>by </span>Eiichiro Oda</p>
+                <p class="cardPages">100 <span> pages</span></p>
+                <button id="cardStatus" class="not-read">Read</button>
+            </div>
+        </div>
+    </div>
+    <section id="popup-form" style="display: none;">
+        <form id="form" action="script.js">
+            <p class="form-title">Add new book</p>
+            <input type="text" placeholder="Title" class="input-form" name="title">
+            <input type="text" placeholder="Author" class="input-form" name="author">
+            <input type="number" placeholder="Pages" class="input-form" name="pages">
+            <div class="status-div">
+                <input type="checkbox" id="checkbox" name="status"><span class="status-text">Have you read it yet?</span>
+            </div>
+            <button form="form" type="submit" id="submit">Submit</button>
+        </form>
+    </section>
+    <div class="black-tint" style="display: none;"></div>
+</body>
+</html>
