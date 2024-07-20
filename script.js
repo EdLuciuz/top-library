@@ -37,7 +37,7 @@ function display() {
     for (let i = 0; i < library.length; i++) {
         let closeCard = document.createElement('i')
         closeCard.classList.add('fa-solid')
-        closeCard.classList.add('fa-circle-xmark')
+        closeCard.classList.add('fa-xmark')
         closeCard.classList.add('close-btn')
 
         closeCard.addEventListener('click', () => {
@@ -99,3 +99,9 @@ function clear() {
         bookCardList[i].remove()
     }
 }
+
+book = new createBook('One Piece Vol. 1', 'Eiichiro Oda', 216, true)
+    library.push(book)
+    clear()
+    display()
+    form.reset()
